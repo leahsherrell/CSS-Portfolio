@@ -2,12 +2,14 @@
 
 // 1. Configuration and helpers
 @import
+  'abstracts/placeholders',
   'abstracts/variables',
   'abstracts/functions',
   'abstracts/mixins';
 
 // 2. Vendors
 @import
+  'vendor/bourbon/bourbon',
   'vendor/normalize';
 
 // 3. Base stuff
@@ -20,6 +22,7 @@
 // 4. Layout-related sections
 @import
   'layout/header',
+  'layout/gallery',
   'layout/footer';
 
 // 5. Components
