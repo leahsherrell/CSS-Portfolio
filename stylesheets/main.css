@@ -402,6 +402,10 @@ template {
 [hidden] {
   display: none; }
 
+html *:not(body):not(html) {
+  box-sizing: border-box;
+  border: 1px dashed #000; }
+
 html {
   box-sizing: border-box; }
 
@@ -416,6 +420,7 @@ body {
   font-family: 'NeueHaasGroteskText Pro'; }
 
 .wrapper {
+  height: 100vh;
   width: calc(100%);
   float: left;
   margin-left: 0;
@@ -461,7 +466,8 @@ a:hover {
   font-weight: bold;
   font-style: normal; }
 #logo {
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 1.35em; }
 
 header {
   height: 40px;
@@ -473,18 +479,17 @@ header {
     width: calc(25%);
     float: left;
     margin-left: 0;
-    padding-left: 20px;
-    font-size: 1.3em; }
-  header a {
+    padding-left: 30px;
     margin: auto; }
   header nav {
-    width: 70vw;
     display: flex;
     width: calc(75%);
     float: left;
-    margin-left: 0; }
+    margin-left: 0;
+    margin: auto;
+    justify-content: flex-end; }
     header nav a {
       border-top: 1px solid #35414f;
-      padding-top: 2px; }
+      padding: 2px 0 0 30px; }
 
 /*# sourceMappingURL=main.css.map */
