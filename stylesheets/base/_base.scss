@@ -1,10 +1,31 @@
 
+
 html {
   box-sizing: border-box;
+  // @extend %responsive-wireframe;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'NeueHaasGroteskText Pro';
+}
+
+.wrapper {
+  @include grid-column(12);
+  @include grid-collapse;
+}
+
+header {
+  background-color: $brand-color;
+}
+
+a:hover {
+  color: $tertiary-color;
 }
