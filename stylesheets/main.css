@@ -494,6 +494,8 @@ header {
   .gallery .top-gallery {
     display: flex; }
     .gallery .top-gallery .left-top {
+      display: flex;
+      flex-wrap: wrap;
       flex-grow: 2; }
     .gallery .top-gallery .right-top {
       flex-grow: 1; }
@@ -516,10 +518,8 @@ header {
   padding-bottom: 50%; }
 
 footer {
-  height: 60px;
+  height: 80px;
   width: 100vw;
-  position: absolute;
-  bottom: 0;
   display: flex; }
   footer #github {
     margin: auto; }
