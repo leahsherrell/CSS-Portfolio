@@ -15,18 +15,18 @@ html {
 
 body {
   font-family: 'NeueHaasGroteskText Pro';
+  background-color: $secondary-color;
 }
 
-.wrapper {
-  height: 100vh;
-  @include grid-column(12);
-  @include grid-collapse;
-}
-
-header {
+header, footer {
   background-color: $brand-color;
 }
 
 a:hover {
   color: $tertiary-color;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }

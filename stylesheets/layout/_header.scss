@@ -1,5 +1,5 @@
 header {
-  height: 40px;
+  height: 60px;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -7,10 +7,9 @@ header {
 
   #logo {
     @include grid-column(3);
-    padding-left: 30px;
+    padding-left: 25px;
     margin: auto;
   }
-
 
   nav {
     display: flex;
@@ -19,8 +18,10 @@ header {
     justify-content: flex-end;
 
     a {
-      border-top: 1px solid $secondary-color;
       padding: 2px 0 0 30px;
+      .link-text {
+        border-top: 1px solid $secondary-color;
+      }
     }
   }
 }

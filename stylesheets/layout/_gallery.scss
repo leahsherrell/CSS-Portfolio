@@ -1,0 +1,33 @@
+.gallery {
+  padding: 20px 20px 20px 20px;
+  .top-gallery {
+    display: flex;
+    .left-top {
+      flex-grow: 2;
+    }
+    .right-top {
+      flex-grow: 1;
+    }
+  }
+}
+
+.square {
+  width: 50%;
+}
+
+.rectangle {
+  width: 100%;
+  height: 50%;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.rectangle:after {
+  content: "";
+  display: block;
+  padding-bottom: 50%;
+}
