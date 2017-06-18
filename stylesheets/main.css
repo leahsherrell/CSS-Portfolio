@@ -420,7 +420,7 @@ body {
   font-family: 'NeueHaasGroteskText Pro';
   background-color: #35414f; }
 
-header, footer {
+header {
   background-color: #e22126; }
 
 a:hover {
@@ -517,8 +517,11 @@ header {
 
 footer {
   height: 60px;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
   display: flex; }
-  footer a {
+  footer #github {
     margin: auto; }
 
 /*# sourceMappingURL=main.css.map */

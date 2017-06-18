@@ -18,7 +18,7 @@ body {
   background-color: $secondary-color;
 }
 
-header, footer {
+header{
   background-color: $brand-color;
 }
 
@@ -30,3 +30,10 @@ a {
   text-decoration: none;
   color: black;
 }
+
+// img {
+//   max-width: 100%;
+//   max-height: 100%;
+//   position: absolute;
+//
+// }
