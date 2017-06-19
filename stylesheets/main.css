@@ -468,11 +468,13 @@ header {
   justify-content: space-between;
   padding: 10px; }
   header #logo {
-    width: calc(25%);
-    float: left;
-    margin-left: 0;
-    padding-left: 25px;
+    padding-left: 5px;
     margin: auto; }
+  header #logo:hover {
+    animation-name: grow;
+    animation-duration: .6s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; }
   header nav {
     display: flex;
     width: calc(75%);
@@ -485,6 +487,9 @@ header {
       header nav a .link-text {
         border-top: 1px solid #35414f; }
 
+@keyframes grow {
+  50% {
+    transform: scale(1.5); } }
 .gallery {
   padding: 10px 0 10px 10px; }
   .gallery .top-gallery {
@@ -532,7 +537,7 @@ img {
   padding-right: 10px;
   padding-bottom: 10px;
   -webkit-filter: grayscale(100%);
-  -webkit-transition: .5s ease-in-out; }
+  -webkit-transition: .4s ease-in-out; }
 
 .square a {
   text-align: center; }

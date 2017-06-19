@@ -6,9 +6,15 @@ header {
   padding: 10px;
 
   #logo {
-    @include grid-column(3);
-    padding-left: 25px;
+    padding-left: 5px;
     margin: auto;
+  }
+
+  #logo:hover {
+    animation-name: grow;
+    animation-duration: .6s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
   }
 
   nav {
@@ -23,5 +29,11 @@ header {
         border-top: 1px solid $secondary-color;
       }
     }
+  }
+}
+
+@keyframes grow {
+  50% {
+    transform: scale(1.5);
   }
 }
