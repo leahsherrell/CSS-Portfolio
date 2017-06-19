@@ -4,10 +4,16 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 
   #logo {
     padding-left: 5px;
     margin: auto;
+    @include respond-to('small') {
+      font-size: 5.2vw;
+    }
   }
 
   #logo:hover {
@@ -26,9 +32,17 @@ header {
     a {
       padding: 2px 0 0 30px;
       .link-text {
+        font-size: .8em;
         border-top: 1px solid $secondary-color;
+        @include respond-to('small') {
+          font-size: 2vw;
+        }
       }
     }
+  }
+
+  @include respond-to('small') {
+    height: 90px;
   }
 }
 

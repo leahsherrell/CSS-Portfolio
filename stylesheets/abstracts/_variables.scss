@@ -1,5 +1,5 @@
-$brand-color: #e22126;
-$brand-color-rgba: rgba(226, 33, 35, .95);
+$brand-color: #ffd430;
+$brand-color-rgba: rgba(255, 212, 48, .8);
 
 $secondary-color: #35414f;
 $secondary-color-rgba: rgba(53, 65, 79, 1);
@@ -7,13 +7,15 @@ $secondary-color-rgba: rgba(53, 65, 79, 1);
 $tertiary-color: #7d0028;
 $tertiary-color-rgba: rgba(125, 0, 40, 1);
 
-$complimentary-color: #ffd430;
-$complimentary-color-rgba: rgba(255, 212, 48, 1);
+$complimentary-color: #e22126;
+$complimentary-color-rgba: rgba(226, 33, 35, .95);
 
 $secondary-complimentary-color: #168793;
 $secondary-complimentary-color-rgba: rgba(22, 135, 137, 1);
 
-$neat-grid: (
-  columns: 12,
-  gutter: 0,
+$breakpoints: (
+  'small': (min-width: 426px),
+  'medium': (min-width: 760px),
+  'large': (min-width: 960px),
+  'x-large': (min-width: 1470px)
 );

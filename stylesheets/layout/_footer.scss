@@ -5,5 +5,11 @@ footer {
 
   #github {
     margin: auto;
+    padding: 2px 5px;
+    color: #000;
+    background-color: $secondary-color;
+    &:hover {
+      color: $brand-color;
+    }
   }
 }
