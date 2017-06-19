@@ -25,7 +25,7 @@ Last solo Epicodus CSS exercise using:
 
 ## Setup/Installation Requirements
 
-Click on this link:
+Click on this link: https://leahsherrell.github.io/CSS-Portfolio/
 
 ### License
 
