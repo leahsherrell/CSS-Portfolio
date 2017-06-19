@@ -531,7 +531,14 @@ img {
   max-width: 100%;
   padding-right: 10px;
   padding-bottom: 10px;
-  -webkit-filter: grayscale(100%); }
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out; }
+
+.square a {
+  text-align: center; }
+
+img:hover {
+  -webkit-filter: none; }
 
 .vertical-rectangle img {
   height: 100%;
